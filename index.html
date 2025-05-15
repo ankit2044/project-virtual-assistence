@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Virtual Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+
+<div class="assistant-container">
+  <h1>Virtual Assistant</h1>
+  
+  <div id="chatbox">
+    <div id="messages"></div>
+  </div>
+
+  <div class="input-area">
+    <input type="text" id="userInput" placeholder="Type your command..." autofocus>
+    <button onclick="sendCommand()">Send</button>
+    <button onclick="startListening()" id="micButton">🎤</button>
+  </div>
+
+  <button onclick="toggleMode()" id="modeToggle">Switch to Dark Mode</button>
+</div>
+
+<script src="Script.js"></script>
+</body>
+</html>

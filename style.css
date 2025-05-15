@@ -1,0 +1,103 @@
+/* style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    transition: background 0.5s, color 0.5s;
+  }
+  
+  .light-mode {
+    background: #f2f2f2;
+    color: #333;
+  }
+  
+  .dark-mode {
+    background: #1a1a1a;
+    color: #f2f2f2;
+  }
+  
+  .assistant-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 350px;
+    text-align: center;
+    transition: background 0.5s, color 0.5s;
+  }
+  
+  .dark-mode .assistant-container {
+    background: #333;
+    color: #f2f2f2;
+  }
+  
+  #chatbox {
+    background: #eee;
+    padding: 15px;
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+  }
+  
+  .dark-mode #chatbox {
+    background: #555;
+  }
+  
+  .input-area {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+  }
+  
+  #userInput {
+    width: 60%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    padding: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .message {
+    max-width: 70%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 15px;
+    clear: both;
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  .message.user {
+    background: #4CAF50;
+    color: white;
+    float: right;
+    text-align: right;
+  }
+  
+  .message.assistant {
+    background: #ddd;
+    color: black;
+    float: left;
+    text-align: left;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
